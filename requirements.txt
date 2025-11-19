@@ -1,0 +1,11 @@
+lit-saint==0.4.1
+pandas==1.5.3
+openml==0.14.2
+ipykernel==6.29.5
+matplotlib==3.7.5
+seaborn==0.13.2
+lightgbm==3.3.5
+xgboost==1.7.6
+catboost==1.2.5
+autogluon==0.8.3
+optuna

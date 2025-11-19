@@ -1,0 +1,23 @@
+{
+	"name": "Python 3.8",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/bin/python3.8",
+				"python.analysis.extraPaths": [
+					"/workspaces/AM-1"
+				]
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"njpwerner.autodocstring",
+				"donjayamanne.python-extension-pack"
+			]
+		}
+	},
+	"postCreateCommand": "python3.8 -m pip install -r requirements.txt"
+}
