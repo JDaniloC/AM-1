@@ -244,7 +244,7 @@ tifffile==2023.7.10
 timm==0.9.16
 tokenizers==0.19.1
 toolz==0.12.1
-torch==1.13.1
+torch==2.8.0
 torchmetrics==0.11.4
 torchvision==0.14.1
 tornado==6.4.2
