@@ -56,6 +56,15 @@ def get_dataset_dir(model_key: str, dataset_name: str) -> Path:
     slug = _slugify(dataset_name)
     return ARTIFACT_ROOT / model_key.lower() / slug
 
+def artifact_exists(model_key: str, dataset_name: str) -> bool:
+    dataset_dir = get_dataset_dir(model_key, dataset_name)
+    return (
+        dataset_dir.joinpath('metadata.json').exists()
+        and dataset_dir.joinpath('predictions.npz').exists()
+    )
+
+def artifact_output_dir(model_key: str, dataset_name: str) -> str:
+    return str(get_dataset_dir(model_key, dataset_name))
 
 def write_artifact_bundle(
     *,
