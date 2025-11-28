@@ -4,6 +4,8 @@ checkpoints/
 saved_models/
 artifacts/
 evaluation_results.csv
+trained_models
+datasets/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
