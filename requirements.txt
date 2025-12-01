@@ -67,7 +67,7 @@ fastcore==1.7.20
 fastdownload==0.0.7
 fastprogress==1.0.3
 filelock==3.14.0
-fonttools==4.57.0
+fonttools==4.61.0
 frozenlist==1.5.0
 fsspec==2025.3.0
 future==1.0.0
